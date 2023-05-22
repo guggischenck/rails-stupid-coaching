@@ -13,3 +13,51 @@
  *= require_tree .
  *= require_self
  */
+ .crate-button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  background-color: #e6e6e6;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.crate-button:before,
+.crate-button:after {
+  content: '';
+  position: absolute;
+  background-color: #ccc;
+}
+
+.crate-button:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+
+.crate-button:after {
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+}
+
+.crate-button:hover {
+  background-color: #ccc;
+}
+
+.crate-button:hover:before {
+  background-color: #0648ff;
+}
+
+.crate-button:hover:after {
+  background-color: #089cff;
+}
